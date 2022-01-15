@@ -189,6 +189,27 @@ section>.banner-text>span:hover{
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
+address>span{
+    background-color: crimson;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+address>span>a{
+    color: white;
+    font-weight: 600;
+}
+address>span:hover{
+    background-color: rgb(27, 148, 27);
+    color: white;
+}
+.contact-section i{
+    margin-left: 10px;
+}
 /* footer section */
 .footer{
     max-width: 1500px;
@@ -219,40 +240,54 @@ section>.banner-text>span:hover{
     
 }
 /* for responsive */
-/* For small and medium devices (phones and tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-    .logo-div{
+/* For small and medium devices (phones 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header{
+        display: block;
         text-align: center;
     }
-    .nav{
-      display: none;
-  }
-  .banner{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
+    .banner{
+        display: block;
+        text-align: center;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .gallary-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
 }
-.collection-gallary{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-.ad-section-img{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-.ad-section-img{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+/* For medium devices phones 992px and down) */
+@media only screen and (max-width: 768px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .banner{
+        display: block;
+        text-align: center;
+    }
+    .banner-text h1{
+        font-size: 35px;
+    }
+    .gallary-section{
+        display: block;
+        text-align: center;
+        margin: 40px 10px;
+    }
+   
 }
 
 
 /* Medium devices (landscape laptop, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .collection-gallary{
+    .gallary-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    } 
-    
+        text-align: center;
+    }
 }
 
